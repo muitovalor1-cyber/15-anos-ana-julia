@@ -47,22 +47,40 @@ export const DetailsSection: React.FC = () => {
               O que teremos no jantar?
             </h4>
             <div className="w-12 h-[1px] bg-tiffany-light mx-auto mb-4"></div>
-            <p className="font-sans text-gray-600 text-sm leading-relaxed max-w-md mx-auto">
+            <p className="font-sans text-gray-600 text-sm leading-relaxed max-w-md mx-auto mb-6">
               {EVENT_DETAILS.menu}
             </p>
+
+            {EVENT_DETAILS.prices && (
+              <div className="bg-tiffany-soft/20 p-5 rounded-lg border border-tiffany-soft/50 max-w-sm mx-auto">
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="font-sans text-gray-600">Por pessoa</span>
+                    <span className="font-sans font-semibold text-tiffany-dark">{EVENT_DETAILS.prices.adult}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="font-sans text-gray-600">5 a 8 anos</span>
+                    <span className="font-sans font-semibold text-tiffany-dark">{EVENT_DETAILS.prices.kids5to8}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="font-sans text-gray-600">9 a 11 anos</span>
+                    <span className="font-sans font-semibold text-tiffany-dark">{EVENT_DETAILS.prices.kids9to11}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-sm border-t border-tiffany-soft pt-2 mt-2">
+                    <span className="font-sans text-gray-600">Bariátrica</span>
+                    <span className="font-sans font-semibold text-tiffany-dark">{EVENT_DETAILS.prices.bariatric}</span>
+                  </div>
+                </div>
+                {EVENT_DETAILS.prices.note && (
+                  <p className="mt-4 text-[11px] font-sans text-tiffany-dark/70 italic uppercase tracking-wider">
+                    {EVENT_DETAILS.prices.note}
+                  </p>
+                )}
+              </div>
+            )}
           </div>
 
-          <a
-            href={EVENT_DETAILS.mapLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-tiffany text-white px-8 py-4 rounded-full text-sm font-sans font-medium hover:bg-tiffany-dark transition-all transform hover:scale-105 shadow-lg shadow-tiffany/20 mb-8"
-          >
-            <MapPin size={18} />
-            Ver no Google Maps
-          </a>
-
-          <div className="w-full h-72 rounded-xl overflow-hidden border border-tiffany-soft transition-all duration-500 shadow-inner">
+          <div className="w-full h-72 rounded-xl overflow-hidden border border-tiffany-soft transition-all duration-500 shadow-inner mb-8">
             <iframe
               src="https://maps.google.com/maps?q=Pizzaria%20Nostra%20Casa%20R.%20Raposo%20Tavares%20747%20Pilarzinho%20Curitiba&t=&z=17&ie=UTF8&iwloc=&output=embed"
               width="100%"
@@ -74,6 +92,16 @@ export const DetailsSection: React.FC = () => {
               title="Localização da Pizzaria Nostra Casa"
             ></iframe>
           </div>
+
+          <a
+            href={EVENT_DETAILS.mapLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-tiffany text-white px-8 py-4 rounded-full text-sm font-sans font-medium hover:bg-tiffany-dark transition-all transform hover:scale-105 shadow-lg shadow-tiffany/20 mb-8"
+          >
+            <MapPin size={18} />
+            Ver no Google Maps
+          </a>
         </div>
 
         {/* Parking Note */}

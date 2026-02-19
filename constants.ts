@@ -26,7 +26,14 @@ export const EVENT_DETAILS: EventDetails = {
   address: "R. Raposo Tavares, 747 - Pilarzinho, Curitiba - PR",
   parkingNote: "Para sua comodidade, há um estacionamento bem ao lado.",
   mapLink: "https://www.google.com/maps/search/?api=1&query=Pizzaria+Nostra+Casa+R.+Raposo+Tavares+747+Pilarzinho+Curitiba",
-  menu: "No rodízio temos: 36 Pizzas, 13 esfirras, 7 tipos de porções, entre elas camarão crocante, bolinho de tilápia com cream cheese e sorvete a vontade."
+  menu: "No rodízio temos: 36 Pizzas, 13 esfirras, 7 tipos de porções, entre elas camarão crocante, bolinho de tilápia com cream cheese e sorvete a vontade.",
+  prices: {
+    adult: "R$ 64,90",
+    kids5to8: "R$ 24,90",
+    kids9to11: "R$ 39,90",
+    bariatric: "R$ 39,90",
+    note: "Cada convidado ficará responsável pelo valor do seu jantar."
+  }
 };
 
 export const GIFT_COPY = {
@@ -37,8 +44,8 @@ export const GIFT_COPY = {
 };
 
 export const PIX_DATA: PixDetails = {
-  key: "41999999999", // Placeholder key as per instructions to [INSERIR CHAVE AQUI]
-  name: "Ana Júlia da Silva" // Placeholder name
+  key: "00020126330014br.gov.bcb.pix0111129071009045204000053039865802BR5923Ana Julia De Avila Rosa6009Sao Paulo62290525REC6997806B09B066635153986304948D",
+  name: "Ana Julia De Avila Rosa"
 };
 
 export const CONFIRMATION_COPY = {

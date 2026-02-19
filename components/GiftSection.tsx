@@ -5,7 +5,7 @@ import { GIFT_COPY } from '../constants';
 
 export const GiftSection: React.FC = () => {
   return (
-    <SectionWrapper className="bg-gradient-to-b from-[#FAF9F6] to-tiffany-soft/30">
+    <SectionWrapper id="presente" className="bg-gradient-to-b from-[#FAF9F6] to-tiffany-soft/30">
       <div className="text-center max-w-2xl mx-auto">
         <h2 className="font-serif text-4xl text-[#2D3748] mb-8">
           {GIFT_COPY.title}

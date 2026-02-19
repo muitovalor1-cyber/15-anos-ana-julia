@@ -22,21 +22,21 @@ export const PixCard: React.FC = () => {
 
       <div className="space-y-4">
         <div>
-          <p className="text-xs font-sans uppercase tracking-widest text-gray-400 text-center mb-1">Chave Pix</p>
-          <p className="font-serif text-2xl text-center text-gray-800 break-all">{PIX_DATA.key}</p>
+          <p className="text-xs font-sans uppercase tracking-widest text-gray-400 text-center mb-1">Pix Copia e Cola</p>
+          <p className="font-mono text-sm text-center text-gray-600 break-all bg-gray-50 p-3 rounded-lg border border-gray-100">{PIX_DATA.key}</p>
         </div>
 
-        <div className="text-center">
-          <p className="text-xs font-sans uppercase tracking-widest text-gray-400 mb-1">Nome</p>
-          <p className="font-sans text-sm text-gray-600">{PIX_DATA.name}</p>
+        <div className="text-center pt-2">
+          <p className="text-xs font-sans uppercase tracking-widest text-gray-400 mb-1">Beneficiário</p>
+          <p className="font-sans text-sm font-medium text-gray-800">{PIX_DATA.name}</p>
         </div>
 
         <motion.button
           whileTap={{ scale: 0.98 }}
           onClick={handleCopy}
           className={`w-full flex items-center justify-center gap-2 py-3 px-6 rounded-xl transition-all duration-300 ${copied
-              ? 'bg-green-100 text-green-700 border border-green-200'
-              : 'bg-tiffany-dark text-white shadow-lg shadow-tiffany-dark/20 hover:bg-tiffany'
+            ? 'bg-green-100 text-green-700 border border-green-200'
+            : 'bg-tiffany-dark text-white shadow-lg shadow-tiffany-dark/20 hover:bg-tiffany'
             }`}
         >
           {copied ? (
@@ -47,7 +47,7 @@ export const PixCard: React.FC = () => {
           ) : (
             <>
               <Copy size={18} />
-              <span className="font-sans font-medium">Copiar Chave Pix</span>
+              <span className="font-sans font-medium">Copiar Código Pix</span>
             </>
           )}
         </motion.button>

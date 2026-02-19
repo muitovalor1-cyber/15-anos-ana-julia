@@ -5,8 +5,8 @@ import { InvitationSection } from './components/InvitationSection';
 import { DetailsSection } from './components/DetailsSection';
 import { GiftSection } from './components/GiftSection';
 import { ConfirmationSection } from './components/ConfirmationSection';
-import { MusicPlayer } from './components/MusicPlayer';
 import { Footer } from './components/Footer';
+import { FloatingPixButton } from './components/FloatingPixButton';
 
 const App: React.FC = () => {
   // Smooth scroll behavior for the whole document
@@ -19,8 +19,7 @@ const App: React.FC = () => {
 
   return (
     <div className="font-sans antialiased selection:bg-tiffany-accent selection:text-tiffany-dark overflow-x-hidden">
-      <MusicPlayer />
-
+      <FloatingPixButton />
       <main className="relative z-10 flex flex-col gap-0">
         <HeroSection />
         <EssenceSection />

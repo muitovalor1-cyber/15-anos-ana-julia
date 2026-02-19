@@ -12,6 +12,13 @@ export interface EventDetails {
   parkingNote: string;
   mapLink: string;
   menu?: string;
+  prices?: {
+    adult: string;
+    kids5to8: string;
+    kids9to11: string;
+    bariatric: string;
+    note?: string;
+  };
 }
 
 export interface PixDetails {
