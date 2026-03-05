@@ -51,8 +51,8 @@ export const PIX_DATA: PixDetails = {
 export const CONFIRMATION_COPY = {
   title: "Vamos celebrar juntos?",
   text1: "Como nosso jantar será muito intimista, precisamos organizar tudo com muito carinho e precisão.",
-  text2: "Para confirmar a sua presença e receber todas as atualizações e recadinhos do aniversário, clique no botão abaixo. Você será direcionado(a) para o nosso grupo VIP no WhatsApp exclusivo para os convidados.",
-  cta: "SIM! Quero confirmar minha presença e entrar no grupo"
+  text2: "Para confirmar sua presença, clique no botão para entrar em nosso grupo exclusivo de convidados no WhatsApp.",
+  cta: "Confirmar minha presença"
 };
 
 export const FOOTER_COPY = {

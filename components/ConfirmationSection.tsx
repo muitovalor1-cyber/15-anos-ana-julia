@@ -25,7 +25,7 @@ export const ConfirmationSection: React.FC = () => {
           </p>
           <div className="w-10 h-[1px] bg-tiffany-soft mx-auto"></div>
           <p className="leading-relaxed">
-            Para <strong className="font-semibold text-gray-800">confirmar a sua presença</strong> e receber todas as atualizações e recadinhos do aniversário, clique no botão abaixo. Você será direcionado(a) para o nosso <strong className="font-semibold text-[#25D366]">grupo VIP no WhatsApp</strong> exclusivo para os convidados.
+            Para <strong className="font-semibold text-gray-800">confirmar sua presença</strong>, clique no botão para entrar em nosso <strong className="font-semibold text-[#25D366]">grupo exclusivo</strong> de convidados no WhatsApp.
           </p>
         </div>
 
