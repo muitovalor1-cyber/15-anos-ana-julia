@@ -3,7 +3,6 @@ import { HeroSection } from './components/HeroSection';
 import { EssenceSection } from './components/EssenceSection';
 import { InvitationSection } from './components/InvitationSection';
 import { DetailsSection } from './components/DetailsSection';
-import { GiftSection } from './components/GiftSection';
 import { ConfirmationSection } from './components/ConfirmationSection';
 import { Footer } from './components/Footer';
 import { FloatingPixButton } from './components/FloatingPixButton';
@@ -28,7 +27,6 @@ const App: React.FC = () => {
         <EssenceSection />
         <MemorySection />
         <InvitationSection />
-        <GiftSection />
         <DetailsSection />
         <ConfirmationSection />
       </main>

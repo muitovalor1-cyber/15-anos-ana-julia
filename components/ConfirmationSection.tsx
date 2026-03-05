@@ -9,18 +9,24 @@ export const ConfirmationSection: React.FC = () => {
     <SectionWrapper className="bg-white">
       <div className="text-center max-w-xl mx-auto">
 
-        {/* Suggestion: Last photo inviting */}
-        <div className="w-full aspect-[4/5] max-w-lg mx-auto mb-10 rounded-3xl overflow-hidden border-4 border-tiffany-soft shadow-2xl">
-          <img src="https://i.imgur.com/xvR6TKt.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-top" />
+        {/* New Photo - Striking Portrait */}
+        <div className="w-full aspect-[4/5] max-w-[320px] md:max-w-md mx-auto mb-10 rounded-t-full rounded-b-[3rem] overflow-hidden border-[6px] border-white shadow-2xl relative">
+          <div className="absolute inset-0 border border-tiffany-soft/50 rounded-t-full rounded-b-[3rem] z-10 pointer-events-none"></div>
+          <img src="https://i.imgur.com/DEB8rv9.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-[center_30%] hover:scale-105 transition-transform duration-1000" />
         </div>
 
         <h2 className="font-serif text-4xl text-[#2D3748] mb-6">
           {CONFIRMATION_COPY.title}
         </h2>
 
-        <div className="font-['Montserrat'] text-gray-600 font-light mb-10 space-y-4">
-          <p>{CONFIRMATION_COPY.text1}</p>
-          <p>{CONFIRMATION_COPY.text2}</p>
+        <div className="font-['Montserrat'] text-gray-600 font-light mb-10 space-y-5 px-4 md:px-0">
+          <p className="leading-relaxed">
+            Como nosso jantar será <strong className="font-semibold text-tiffany-dark">muito intimista</strong>, precisamos organizar tudo com <strong className="font-semibold text-tiffany-dark">muito carinho e precisão</strong>.
+          </p>
+          <div className="w-10 h-[1px] bg-tiffany-soft mx-auto"></div>
+          <p className="leading-relaxed">
+            Para <strong className="font-semibold text-gray-800">confirmar a sua presença</strong> e receber todas as atualizações e recadinhos do aniversário, clique no botão abaixo. Você será direcionado(a) para o nosso <strong className="font-semibold text-[#25D366]">grupo VIP no WhatsApp</strong> exclusivo para os convidados.
+          </p>
         </div>
 
         <motion.a
