@@ -12,11 +12,12 @@ export const HeroSection: React.FC = () => {
           initial={{ scale: 1.05 }}
           animate={{ scale: 1 }}
           transition={{ duration: 4, ease: 'easeOut' }}
-          className="absolute inset-0 bg-cover bg-top h-full w-full"
+          className="absolute inset-0 bg-cover bg-top md:bg-[center_65%] h-full w-full"
           style={{ backgroundImage: 'url(https://i.imgur.com/uFcrOCl.jpeg)' }}
         />
         {/* Gradient mapping: Fades into nothing for her face, building up to the background color at the bottom */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent via-60% to-[#FDFBF7]"></div>
+        {/* Added md:to-80% to stretch the gradient on larger screens for a more natural fade */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent via-60% md:via-50% to-[#FDFBF7] md:to-90%"></div>
       </div>
 
       {/* Content Container - Positioned at the top to highlight Ana Júlia */}
@@ -33,7 +34,7 @@ export const HeroSection: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.8 }}
             >
-              <h1 className="font-serif text-[3.2rem] leading-[1.1] md:text-7xl font-light text-[#1A202C] tracking-tight drop-shadow-sm">
+              <h1 className="font-serif text-[3.2rem] leading-[1.1] md:text-7xl font-light text-white tracking-tight drop-shadow-lg">
                 Ana Júlia
               </h1>
             </motion.div>
@@ -44,20 +45,20 @@ export const HeroSection: React.FC = () => {
               transition={{ duration: 1.2, delay: 1 }}
               className="flex items-center justify-center gap-3 md:gap-4 max-w-[100%] mx-auto"
             >
-              <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-[#1B4F48]/30 to-transparent"></div>
-              <span className="bg-white/40 backdrop-blur-md px-4 py-1.5 rounded-full font-sans text-[#1B4F48] tracking-[0.2em] md:tracking-[0.25em] uppercase text-[9px] md:text-xs font-bold shrink-0 shadow-[0_2px_10px_rgba(0,0,0,0.05)] border border-white/60">
+              <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
+              <span className="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full font-sans text-white tracking-[0.2em] md:tracking-[0.25em] uppercase text-[9px] md:text-xs font-bold shrink-0 shadow-[0_2px_10px_rgba(0,0,0,0.1)] border border-white/30">
                 15 Anos de Delicadeza
               </span>
-              <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-[#1B4F48]/30 to-transparent"></div>
+              <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent via-white/40 to-transparent"></div>
             </motion.div>
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-              className="font-sans text-[#1A202C] text-[15px] md:text-base leading-relaxed tracking-wide max-w-[280px] md:max-w-md mx-auto drop-shadow-sm"
+              className="font-sans text-white/90 text-[15px] md:text-base leading-relaxed tracking-wide max-w-[280px] md:max-w-md mx-auto drop-shadow-md"
             >
-              Hoje, não celebramos apenas uma <strong className="font-semibold">idade</strong>. Celebramos a transição de uma menina que <strong className="font-semibold">floresce</strong>, todos os dias, sob o <strong className="font-semibold">olhar de Deus</strong>.
+              Hoje, não celebramos apenas uma <strong className="font-bold text-white">idade</strong>. Celebramos a transição de uma menina que <strong className="font-bold text-white">floresce</strong>, todos os dias, sob o <strong className="font-bold text-white">olhar de Deus</strong>.
             </motion.p>
           </div>
         </motion.div>

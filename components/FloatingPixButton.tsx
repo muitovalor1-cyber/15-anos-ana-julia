@@ -87,8 +87,8 @@ export const FloatingPixButton: React.FC = () => {
                             </button>
 
                             {/* Photo Header */}
-                            <div className="w-full h-56 sm:h-64 relative">
-                                <img src="https://i.imgur.com/2D53BWC.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-[center_30%]" />
+                            <div className="w-full h-64 sm:h-72 relative">
+                                <img src="https://i.imgur.com/2D53BWC.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-[center_60%]" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" />
                             </div>
 
