@@ -8,13 +8,13 @@ export const EssenceSection: React.FC = () => {
       {/* Visual Suggestion: Photo collage/transition */}
       <div className="grid grid-cols-2 gap-4 mb-16 px-4">
         <div className="col-span-2 aspect-[4/5] md:aspect-[16/10] w-full rounded-3xl overflow-hidden shadow-2xl shadow-tiffany/20">
-          <img src="https://i.imgur.com/UaNbZ0I.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
+          <img src="https://i.imgur.com/kso2AaU.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" />
         </div>
         <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-xl shadow-tiffany/10">
-          <img src="https://i.imgur.com/dTseysg.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" />
+          <img src="https://i.imgur.com/dh4aHRf.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" />
         </div>
         <div className="aspect-[3/4] rounded-3xl overflow-hidden shadow-xl shadow-tiffany/10">
-          <img src="https://i.imgur.com/5DDhF4h.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" />
+          <img src="https://i.imgur.com/gwl5Hn4.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700" />
         </div>
       </div>
 

@@ -8,6 +8,7 @@ import { ConfirmationSection } from './components/ConfirmationSection';
 import { Footer } from './components/Footer';
 import { FloatingPixButton } from './components/FloatingPixButton';
 import { BackgroundMusic } from './components/BackgroundMusic';
+import { MemorySection } from './components/MemorySection';
 
 const App: React.FC = () => {
   // Smooth scroll behavior for the whole document
@@ -25,6 +26,7 @@ const App: React.FC = () => {
       <main className="relative z-10 flex flex-col gap-0">
         <HeroSection />
         <EssenceSection />
+        <MemorySection />
         <InvitationSection />
         <GiftSection />
         <DetailsSection />

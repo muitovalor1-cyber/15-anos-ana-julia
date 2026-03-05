@@ -9,7 +9,7 @@ export const InvitationSection: React.FC = () => {
 
         {/* Background Image Suggestion: Starbucks/Casual */}
         <div className="w-full max-w-lg mx-auto aspect-[4/5] mb-12 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-          <img src="https://i.imgur.com/GHd8ymL.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-top" />
+          <img src="https://i.imgur.com/dh4aHRf.jpeg" alt="Ana Júlia" className="w-full h-full object-cover object-center" />
         </div>
 
         <h2 className="font-serif text-4xl md:text-5xl text-[#2D3748] mb-6">
